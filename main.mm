@@ -2,6 +2,10 @@
 Created 07-09-2015
 Updated 9-2-2018
 Lucas Jackson (http://lucasjackson.io/repo)
+
+Edited 12-26-2021
+Updated 12-26-2021
+Andres Castelo 
 */
 #import "capture.h"
 #import <AVFoundation/AVFoundation.h>
@@ -48,7 +52,7 @@ int main(int argc, char **argv, char **envp) {
 }
 
 void usage(char* cmd) {
-    printf("Usage: %s -l(toggle landscape) -q(specify quality [highest 1 - lowest 3]) -o(specify output file) -f(toggle front facing)\n",cmd);
+    printf("Usage: %s -l(toggle landscape) -q(specify quality [highest 1 - lowest 4]) -o(specify output file) -f(toggle front facing)\n",cmd);
 }
 
 void takepicture(BOOL front,BOOL landscape,BOOL mirror,char* filename,int quality) {

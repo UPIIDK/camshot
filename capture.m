@@ -50,11 +50,14 @@
     [outputSettings release];
     [self.session addOutput:self.stillImageOutput];
     if (self.quality == 1)
-        [self.session setSessionPreset:AVCaptureSessionPreset1920x1080];
+        [self.session setSessionPreset:AVCaptureSessionPresetPhoto];
     else if (self.quality == 2)
-        [self.session setSessionPreset:AVCaptureSessionPreset1280x720];
+        [self.session setSessionPreset:AVCaptureSessionPreset1920x1080];
     else if (self.quality == 3)
+        [self.session setSessionPreset:AVCaptureSessionPreset1280x720];
+    else if (self.quality == 4)
         [self.session setSessionPreset:AVCaptureSessionPreset640x480];
+    
 
     [self.session startRunning];
 }
